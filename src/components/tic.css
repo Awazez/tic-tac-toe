@@ -1,0 +1,23 @@
+
+.game {
+    display: flex;               /* Utilise Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Ajoute un espacement entre le tableau de jeu et les résultats */
+    align-items: flex-start;     /* Aligne les éléments en haut (optionnel) */
+  }
+  
+  .game-board {
+    margin-right: 20px;          /* Ajoute un espace entre le tableau de jeu et les résultats */
+  }
+  
+  .game-info {
+    width: 200px;                /* Fixe la largeur de la section des résultats */
+  }
+
+
+  .board-row {
+    display: flex; /* Chaque rangée doit aligner les cases horizontalement */
+}
+
+.game-board {
+    display: inline-block; /* Assure que le board ne prend pas toute la largeur */
+}
