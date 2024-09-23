@@ -1,14 +1,14 @@
-import React from "react";
+import { SquareProps } from "../types/types"; // Import du type
+import './square.css';
 
-type SquareProps = {
-  value: string | number | null; // Définir les types possibles pour 'value'
-  onSquareClick: () => void; // Définir le type de la fonction de clic
-};
 
 function Square({ value, onSquareClick }: SquareProps) {
   return (
     <button className="square" onClick={onSquareClick}>
-      {value}
+        <div className="value">
+        {value}
+        </div>
+      
     </button>
   );
 }
